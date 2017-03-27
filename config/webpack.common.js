@@ -62,6 +62,9 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             template: 'src/index.html'
+        }),
+        new webpack.DefinePlugin({
+            'process.browser': true
         })
     ]
 };

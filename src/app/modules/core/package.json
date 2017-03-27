@@ -1,6 +1,6 @@
 {
   "name": "@vdzundza/core_blog",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple Core module for test purposes",
   "main": "bundles/core_blog.umd.js",
   "types": "core_blog.module.d.ts",
@@ -14,8 +14,7 @@
     "minify": "uglifyjs dist/bundles/core.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/core.umd.min.js",
     "prebuild": "npm run clean",
     "build": "npm run transpile && npm run package  && npm run minify",
-    "publish": "cp package.json ./dist/package.json && cd ./dist && npm publish",
-    "publish:patch": "bump patch && npm run publish"
+    "copy": "cp package.json ./dist/package.json && cd ./dist && npm publish"
   },
   "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
   "license": "MIT",

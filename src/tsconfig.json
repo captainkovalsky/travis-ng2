@@ -13,5 +13,9 @@
         ],
         "noImplicitAny": false,
         "suppressImplicitAnyIndexErrors": true
-    }
+    },
+    "exclude": [
+        "**/*.spec.ts",
+        "app/modules"
+    ]
 }
