@@ -1,6 +1,6 @@
 {
   "name": "@vdzundza/core_blog",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "Simple Core module for test purposes",
   "main": "bundles/core_blog.umd.js",
   "types": "core_blog.module.d.ts",

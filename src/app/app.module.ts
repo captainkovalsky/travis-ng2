@@ -6,7 +6,7 @@ import { CoreModule } from '@vdzundza/core_blog';
 @NgModule({
     imports: [
         BrowserModule,
-        CoreModule
+        CoreModule.forRoot('configure me'),
     ],
     declarations: [
         AppComponent

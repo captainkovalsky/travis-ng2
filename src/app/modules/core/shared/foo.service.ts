@@ -2,9 +2,12 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class FooService {
-    constructor() { }
+    private config: string;
+    constructor(configStr = 'prod config') {
+        this.config = configStr;
+    }
 
     public baz(): string {
-        return 'test string';
+        return this.config;
     }
 }
