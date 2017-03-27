@@ -18,6 +18,7 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
+                exclude: helpers.root('src', 'app', 'modules'),
                 loaders: [
                     {
                         loader: 'awesome-typescript-loader',

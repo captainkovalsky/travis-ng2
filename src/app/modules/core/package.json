@@ -1,0 +1,37 @@
+{
+  "name": "@vdzundza/core_blog",
+  "version": "1.0.0",
+  "description": "Simple Core module for test purposes",
+  "main": "bundles/core_blog.umd.js",
+  "types": "core_blog.module.d.ts",
+  "module": "index.js",
+  "es2015": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist node_modules && yarn cache clean && yarn install",
+    "transpile": "ngc",
+    "package": "rollup -c rollup.config.js",
+    "minify": "uglifyjs dist/bundles/core.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/core.umd.min.js",
+    "prebuild": "npm run clean",
+    "build": "npm run transpile && npm run package  && npm run minify",
+    "publish": "cp package.json ./dist/package.json && cd ./dist && npm publish",
+    "publish:patch": "bump patch && npm run publish"
+  },
+  "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/common": "4.0.0",
+    "@angular/compiler": "4.0.0",
+    "@angular/compiler-cli": "4.0.0",
+    "@angular/core": "4.0.0",
+    "bump": "0.2.5",
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "8.0.2",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-uglify": "1.0.1",
+    "rxjs": "^5.0.1",
+    "typescript": "^2.1.5",
+    "uglifyjs": "^2.4.10",
+    "zone.js": "^0.8.4"
+  }
+}
