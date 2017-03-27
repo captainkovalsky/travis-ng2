@@ -1,0 +1,4 @@
+dist
+*.ngsummary.json
+*.ngfactory.ts
+yarn.lock
