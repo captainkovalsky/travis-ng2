@@ -1,9 +1,5 @@
 import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
-import { FooService } from "./shared/foo.service";
-
-export function FooFactory(bazString: string) {
-    return new FooService(bazString);
-}
+import { FooService, CONFIG } from "./shared/foo.service";
 
 @NgModule({
     imports: [],
@@ -16,7 +12,13 @@ export class CoreModule {
             ngModule: CoreModule,
             providers: [
                 {
-                    provide: FooService, useValue: FooFactory(bazString)
+                    provide: CONFIG,
+                    useValue: bazString
+                },
+                {
+                    provide: FooService,
+                    useClass: FooService,
+                    deps: [CONFIG]
                 }
             ]
         };

@@ -6,11 +6,13 @@ import { CoreModule } from '@vdzundza/core_blog';
 @NgModule({
     imports: [
         BrowserModule,
-        CoreModule.forRoot('configure me'),
+        CoreModule.forRoot('configure me')
     ],
     declarations: [
         AppComponent
     ],
-    bootstrap: [AppComponent]
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }

@@ -1,9 +1,9 @@
-import { Injectable } from "@angular/core";
+import { Injectable, OpaqueToken, Inject } from "@angular/core";
 
 @Injectable()
 export class FooService {
     private config: string;
-    constructor(configStr: string = 'prod config') {
+    constructor( @Inject(CONFIG) configStr: string = 'prod config') {
         this.config = configStr;
     }
 
@@ -11,3 +11,4 @@ export class FooService {
         return this.config;
     }
 }
+export const CONFIG = new OpaqueToken('FooServiceConfig');
