@@ -16,8 +16,7 @@ export class CoreModule {
             ngModule: CoreModule,
             providers: [
                 {
-                    provide: FooService, useFactory: FooFactory,
-                    deps: [bazString]
+                    provide: FooService, useValue: FooFactory(bazString)
                 }
             ]
         };
