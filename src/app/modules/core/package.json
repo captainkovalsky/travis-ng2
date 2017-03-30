@@ -1,6 +1,6 @@
 {
   "name": "@vdzundza/core_blog",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Simple Core module for test purposes",
   "main": "bundles/core_blog.umd.js",
   "types": "core_blog.module.d.ts",
@@ -8,7 +8,7 @@
   "es2015": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "clean": "ncu -u && rm -rf dist node_modules && yarn cache clean && yarn upgrade",
+    "clean": "ncu -u && rm -rf dist && yarn cache clean && yarn upgrade",
     "transpile": "ngc",
     "package": "rollup -c rollup.config.js",
     "minify": "uglifyjs dist/bundles/core.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/core.umd.min.js",

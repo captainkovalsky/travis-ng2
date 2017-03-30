@@ -1,5 +1,11 @@
 import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
 import { FooService, CONFIG } from "./shared/foo.service";
+import { TitleComponent } from "./shared/components/title.component";
+
+
+const COMPONENTS = [
+    TitleComponent
+];
 
 @NgModule({
     imports: [],
