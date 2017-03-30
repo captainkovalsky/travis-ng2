@@ -1,6 +1,6 @@
 {
   "name": "@vdzundza/core_blog",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Simple Core module for test purposes",
   "main": "bundles/core_blog.umd.js",
   "types": "core_blog.module.d.ts",
@@ -19,10 +19,10 @@
   "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@angular/common": "4.0.0",
-    "@angular/compiler": "4.0.0",
-    "@angular/compiler-cli": "4.0.0",
-    "@angular/core": "4.0.0",
+    "@angular/common": "4.0.1",
+    "@angular/compiler": "4.0.1",
+    "@angular/compiler-cli": "4.0.1",
+    "@angular/core": "4.0.1",
     "bump": "0.2.5",
     "rollup": "^0.41.6",
     "rollup-plugin-commonjs": "8.0.2",
