@@ -1,5 +1,7 @@
 import { Injectable, OpaqueToken, Inject } from "@angular/core";
 
+export let EMAIL_REGEX = new RegExp(/\S+@\S+\.\S+/);
+
 @Injectable()
 export class FooService {
     private config: string;
