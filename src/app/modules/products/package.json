@@ -1,0 +1,35 @@
+{
+  "name": "@vdzundza/products_blog",
+  "version": "0.0.3",
+  "description": "Simple products module for test purposes",
+  "main": "bundles/products_blog.umd.js",
+  "types": "products.module.d.ts",
+  "module": "index.js",
+  "es2015": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "clean": "ncu -u && rm -rf dist && yarn cache clean && yarn upgrade",
+    "transpile": "ngc",
+    "package": "rollup -c rollup.config.js",
+    "minify": "uglifyjs dist/bundles/products_blog.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/products_blog.umd.min.js",
+    "build": "npm run transpile && npm run package  && npm run minify",
+    "deploy": "cp package.json ./dist/package.json"
+  },
+  "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/common": "4.0.1",
+    "@angular/compiler": "4.0.1",
+    "@angular/compiler-cli": "4.0.1",
+    "@angular/core": "4.0.1",
+    "bump": "0.2.5",
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "8.0.2",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "rollup-plugin-uglify": "1.0.1",
+    "rxjs": "^5.3.0",
+    "typescript": "^2.2.2",
+    "uglifyjs": "^2.4.10",
+    "zone.js": "^0.8.5"
+  }
+}
