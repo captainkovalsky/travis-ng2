@@ -1,6 +1,7 @@
 import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
 import { ProductsRoutingModule } from './products-routing.module';
 import { CommonModule } from '@angular/common';
+import { TestComponent } from './components/test.component';
 
 
 const COMPONENTS = [
@@ -11,8 +12,9 @@ const COMPONENTS = [
         CommonModule,
         ProductsRoutingModule
     ],
-    declarations: [],
-    bootstrap: []
+    declarations: [
+        TestComponent
+    ]
 })
 export class ProductsModule {
     // static forRoot(bazString: string): ModuleWithProviders {
