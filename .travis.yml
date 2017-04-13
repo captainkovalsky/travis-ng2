@@ -27,15 +27,24 @@ before_script:
 script: npm run build
 env:
   global:
-    - COMMIT=${TRAVIS_COMMIT::8}
-    - secure: dqS75lOy74ee+565UFbZVyprVJ5PZQJc2CNO0e8sihwqqnL+uhYIRePY3O2oTCyambhTmgNITjnl9eH0Pgx2hqkfb0HLDU2PY6CKnmQL8F7TfHtNVtye76nTGKaVzULwXc9Iw8pDGeQ1JG2O4422NOIuBZavz65a5Ma1l7zBcQs4YHjPdJaZ9g90IbLqCvZOdrL68Yi4hbr6woveEFCmq7krMocMXsR1Zmb+g5pqUl7XVnQtPOeKtHAWWUQLTkuFL/FK9+HQUbXAR+RZjsD5lfi0C5jkQQ1S9NjMcshTEvucNvlox2HhVkNn8RvlZ+3tvSYPotn4QcVoUPCE656060mSEIvpGprB++7ZhLJEjwtgXGONGlsgRQpewRU4OJSlAzDEDG8xfWQFgLpffn9eKmdPokZweqBPB79/5Grgn8UnrtXDie8ayYYldWobVqzTpkaiZeCfgHgpCuZi3ztTHlHaKGGvsoe2pu9b03Rjv+i/nEhtC4Y5VM8WdC97Lzps1O2+uXmbyoNKrQ5LPeYKHIszhUzhYXdSkvg/mjBeiqttEgCZoA8weqHl3baoOwEwx97uMJ2GQzuDST28S9Ord+u+vmVc+PtYrPAL0Yt7aNl8EO5PDGBTcZYgWgjPzaswgSg5yYpBepll+VUiGmjed1IZquhqpcmZ0AUAVx/Z4Os= #DOCKER_USER
-    - secure: EH7PUku13r6njutdd68R1YkbHJ4uLQ6D3R/Cog44yeg0Jyuytrqx/4OBAa2Na74V5xwzsmg7s4/fpzmsO5Wv61qBn8XlLmVeLEK0aRh1cY5m50GWli563pXfcUrGL5TCOLOdr1unuuoZ9TOHcdfO+i0htZBXzQcfNPk1MIJuHzs8eYVkUgfYnM1q6sCYNvIuUHRaIsa2JavM84oPlViTv/JdUHM5iZf6PDFCt8T0UZn9VAosQF6YGkgD8QpWqIxtgYOk0S3gb4TLtgoHD44v/n57N20QNlHCJUHQ1O0BJBxKUbAE4pFNV5dvwyikYiSOv9IBBxHJHb39l4wwytKbRBB4YCPcItJ3yQxBuX9Ozw5uWl5wvXTNp8gtM4rC2sIhaxsBYzk/Gk2JLlBNm8RSHz/3M1redkLHI+h3XFla9MuXXYKHbzEbMWW4iYIwTXdzY8+47b+btlS2+thc/xTNgDPCKRp0vq200uHFWk/G5/C9q1BVw+i8TJXITSjKKjjO4xWRnEWj7C2+hfUO+NN9w+r8B51iLBVplUah3nIlPA3fgPyRP/wLpF7dW5H9ghq7SNCiK1FfSEQaBqIuCVSxgXLqPmGSXSEHaE0PGp+DLtSlp+72hZ40KQUpaXjvxQN32Cus18bGbOgNjxj6qJG31vNT+XTSwAKBvllIn5h2Cno= #DOCKER_PASS
+  - COMMIT=${TRAVIS_COMMIT::8}
+  - secure: dqS75lOy74ee+565UFbZVyprVJ5PZQJc2CNO0e8sihwqqnL+uhYIRePY3O2oTCyambhTmgNITjnl9eH0Pgx2hqkfb0HLDU2PY6CKnmQL8F7TfHtNVtye76nTGKaVzULwXc9Iw8pDGeQ1JG2O4422NOIuBZavz65a5Ma1l7zBcQs4YHjPdJaZ9g90IbLqCvZOdrL68Yi4hbr6woveEFCmq7krMocMXsR1Zmb+g5pqUl7XVnQtPOeKtHAWWUQLTkuFL/FK9+HQUbXAR+RZjsD5lfi0C5jkQQ1S9NjMcshTEvucNvlox2HhVkNn8RvlZ+3tvSYPotn4QcVoUPCE656060mSEIvpGprB++7ZhLJEjwtgXGONGlsgRQpewRU4OJSlAzDEDG8xfWQFgLpffn9eKmdPokZweqBPB79/5Grgn8UnrtXDie8ayYYldWobVqzTpkaiZeCfgHgpCuZi3ztTHlHaKGGvsoe2pu9b03Rjv+i/nEhtC4Y5VM8WdC97Lzps1O2+uXmbyoNKrQ5LPeYKHIszhUzhYXdSkvg/mjBeiqttEgCZoA8weqHl3baoOwEwx97uMJ2GQzuDST28S9Ord+u+vmVc+PtYrPAL0Yt7aNl8EO5PDGBTcZYgWgjPzaswgSg5yYpBepll+VUiGmjed1IZquhqpcmZ0AUAVx/Z4Os=
+  - secure: EH7PUku13r6njutdd68R1YkbHJ4uLQ6D3R/Cog44yeg0Jyuytrqx/4OBAa2Na74V5xwzsmg7s4/fpzmsO5Wv61qBn8XlLmVeLEK0aRh1cY5m50GWli563pXfcUrGL5TCOLOdr1unuuoZ9TOHcdfO+i0htZBXzQcfNPk1MIJuHzs8eYVkUgfYnM1q6sCYNvIuUHRaIsa2JavM84oPlViTv/JdUHM5iZf6PDFCt8T0UZn9VAosQF6YGkgD8QpWqIxtgYOk0S3gb4TLtgoHD44v/n57N20QNlHCJUHQ1O0BJBxKUbAE4pFNV5dvwyikYiSOv9IBBxHJHb39l4wwytKbRBB4YCPcItJ3yQxBuX9Ozw5uWl5wvXTNp8gtM4rC2sIhaxsBYzk/Gk2JLlBNm8RSHz/3M1redkLHI+h3XFla9MuXXYKHbzEbMWW4iYIwTXdzY8+47b+btlS2+thc/xTNgDPCKRp0vq200uHFWk/G5/C9q1BVw+i8TJXITSjKKjjO4xWRnEWj7C2+hfUO+NN9w+r8B51iLBVplUah3nIlPA3fgPyRP/wLpF7dW5H9ghq7SNCiK1FfSEQaBqIuCVSxgXLqPmGSXSEHaE0PGp+DLtSlp+72hZ40KQUpaXjvxQN32Cus18bGbOgNjxj6qJG31vNT+XTSwAKBvllIn5h2Cno=
 after_success:
-  - docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD"
-  - export REPO=viktordzundza/travis-ng2
-  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH
-    ; fi`
-  - docker build -f Dockerfile -t $REPO:$COMMIT .
-  - docker tag $REPO:$COMMIT $REPO:$TAG
-  - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
-  - docker push $REPO
+- docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD"
+- export REPO=viktordzundza/travis-ng2
+- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH
+  ; fi`
+- docker build -f Dockerfile -t $REPO:$COMMIT .
+- docker tag $REPO:$COMMIT $REPO:$TAG
+- docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
+- docker push $REPO
+deploy:
+  provider: openshift
+  user: vdzundza
+  password:
+    secure: eZZsXyChUfSf10VaCWsn7+JjKKy5U6Msu92j+mXkk8Guei5sJrusXaStMUIQWiewtrMe1gMYBTpXazp5i3MuoMxyJEG0NwiXcWpWwHXfTK3XZ4lIN39eTKbdEgnke/RGotA9E1Xo73fyAmxoNRYqxOCIlCRRwT6YfZUynQMM2wjwE/qCNthRGoAF+PVtXQqzVTLZ/uviCaR+zbFUW8kGTFKA7Fo56zqINksgHPP9E+lxAz0niMUfw5yn5StqYddHx9bQjTLZm6DPGKc0C6xUHkvdGchwAeCEZ3ynfavqPnO2K7UF2mzu+uHZs5mDe9AiEGIdISEonGIxE5BgCdpcnraUowXotnchm7rRLCmynrBsszu2+vTngmoqQPfSnEPqFNjoDzjD2CdUOXM45wlsu+06DujeMVCGHlOhhLjVTvFg53OnrIP5mMxf49HFAOvvM10G6TBv5DfJdCl7/LG/pxdkwgrmdGAPHNzwQBJAiRBvTABPn/XVMqDXYJJaJ6M0KWJGFQT/bX/6ltNlmnbRXC+AQEgTE1pqfwCuUgoGOP0wKHr2kX76W57Kjp4naTSddjrmsOdHU284C6A3Nje4CMb2bSOxu+hZ1WfMLD44acaYe8xWd8hcQi3ZLIRwu7ay/5ODQntxtRzvHePCJ9M1tmtj7ZQYOhyAsndtoqZfvQ8=
+  app: travis-ng2
+  domain: ng2
+  on:
+    repo: vdzundza/travis-ng2
